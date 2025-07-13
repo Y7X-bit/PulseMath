@@ -1,5 +1,20 @@
+# Byte-compiled / optimized / DLL files
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+
+# macOS system files
 .DS_Store
-.vscode/
+
+# Logs & envs
 *.log
+.env
+
+# VS Code junk
+.vscode/
+
+# History exports
+calculation_history.txt
+
+# OS junk
+Thumbs.db
