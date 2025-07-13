@@ -1,30 +1,37 @@
-# 🔢 Smart AMOLED Calculator GUI
+<div align="center">
 
-A glowing, stylish, and intelligent calculator powered by CustomTkinter and Pygame — built for speed, vibes, and modern GUI fans.
+# 🎯 PulseMath  
+**She calculated, she served, she conquered.**
 
----
+A premium desktop calculator built with `customtkinter`, rocking full **AMOLED mode**, glowing red outlines, smooth pill-shaped buttons, and smart sidebar tools like history, export, graphs, and more.  
+Branded with 💗 by [Y7X-bit](https://github.com/Y7X-bit)
 
-### ✨ Features
+<img src="assets/1.png" alt="PulseMath UI" width="600"/>
 
-- ✅ AMOLED + RedX Glow theme
-- 🔊 Button click sound (using system sounds)
-- 💫 Smooth glowing rounded buttons
-- 📜 History tracker
-- 📁 Export to `.txt`
-- 📊 Graph plotter
-- 🤖 GPT-style result explainer
-- 💥 Easter egg
-- 💗 Made with love by Yugank
+</div>
 
 ---
 
-### 📸 Preview
+## 🌟 Features at a Glance
 
-![Screenshot](assets/screenshot.png)
+- 🔢 **Basic & Scientific Functions** — %, √, x², 1/x, etc.
+- 📱 **Fully Responsive AMOLED UI** — Dark theme + glowing red accents
+- 🧠 **Smart Sidebar Tools** —  
+  ‣ 📜 History  
+  ‣ 📁 Export to `.txt`  
+  ‣ 📊 Plot expressions as graphs  
+  ‣ 🤖 Auto explain recent calculations  
+- 🔊 **Satisfying Click Sounds** with Pygame
+- 💗 **Built with customtkinter** — smooth, pill-style buttons with glow
 
 ---
 
-### ⚙️ Requirements
+## 🖥️ Installation
+
+> Python 3.9 or later required
 
 ```bash
+git clone https://github.com/Y7X-bit/PulseMath.git
+cd PulseMath
 pip install -r requirements.txt
+python main.py
