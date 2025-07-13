@@ -34,4 +34,4 @@ Branded with 💗 by [Y7X-bit](https://github.com/Y7X-bit)
 git clone https://github.com/Y7X-bit/PulseMath.git
 cd PulseMath
 pip install -r requirements.txt
-python main.py
+python PluseMath.py
