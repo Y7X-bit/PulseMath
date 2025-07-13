@@ -4,10 +4,10 @@ from math import sqrt
 import pygame
 import matplotlib.pyplot as plt
 
-class SmartCalculatorWithSidebar:
+class PulseMathCalculator:
     def __init__(self, root):
         self.root = root
-        self.root.title("Smart Calc Pro | Sidebar Edition")
+        self.root.title("PulseMath | Powered by Y7X 💗")
         self.root.geometry("720x860")
         self.root.resizable(False, False)
 
@@ -26,7 +26,7 @@ class SmartCalculatorWithSidebar:
         self.build_layout()
 
     def build_layout(self):
-        self.main_frame = ctk.CTkFrame(self.root, fg_color="#000000")  # AMOLED background
+        self.main_frame = ctk.CTkFrame(self.root, fg_color="#000000")  # AMOLED
         self.main_frame.pack(fill="both", expand=True)
 
         self.display_and_buttons_frame = ctk.CTkFrame(self.main_frame, fg_color="#000000")
@@ -35,7 +35,12 @@ class SmartCalculatorWithSidebar:
         self.sidebar_frame = ctk.CTkFrame(self.main_frame, fg_color="#000000")
         self.sidebar_frame.pack(side="top", fill="x", padx=10, pady=(5, 10))
 
-        self.footer_label = ctk.CTkLabel(self.main_frame, text="Made with love by Yugank 💗", font=("Poppins", 14), text_color="#ff4d4d")
+        self.footer_label = ctk.CTkLabel(
+            self.main_frame,
+            text="🎯 PulseMath — Powered by Y7X 💗",
+            font=("Poppins", 14, "bold"),
+            text_color="#ff0000"
+        )
         self.footer_label.pack(pady=(0, 10))
 
         self.build_display()
@@ -53,8 +58,8 @@ class SmartCalculatorWithSidebar:
             justify="right",
             height=60,
             corner_radius=15,
-            fg_color="#1e1e1e",
-            text_color="#ff4d4d"  # red glow effect
+            fg_color="#000000",
+            text_color="#ff0000"
         )
         self.display.pack(pady=20, padx=10, fill="x")
 
@@ -85,10 +90,10 @@ class SmartCalculatorWithSidebar:
                     text=label,
                     font=("Poppins", 20),
                     text_color="#ffffff",
-                    fg_color="#1c1c1c",
-                    border_color="#ff4d4d",
+                    fg_color="#000000",
+                    border_color="#ff0000",
                     border_width=2,
-                    hover_color="#2a2a2a",
+                    hover_color="#1a1a1a",
                     corner_radius=30,
                     height=60,
                     width=150,
@@ -228,7 +233,7 @@ class SmartCalculatorWithSidebar:
             self.operation = None
 
     def build_sidebar(self):
-        title_label = ctk.CTkLabel(self.sidebar_frame, text="🔧 Tools", font=("Poppins", 18, "bold"), text_color="#ffffff")
+        title_label = ctk.CTkLabel(self.sidebar_frame, text="🔧 Tools", font=("Poppins", 18, "bold"), text_color="#ff0000")
         title_label.pack(pady=(10, 0))
 
         btn_frame = ctk.CTkFrame(self.sidebar_frame, fg_color="transparent")
@@ -250,10 +255,10 @@ class SmartCalculatorWithSidebar:
                 height=45,
                 width=160,
                 text_color="#ffffff",
-                fg_color="#1c1c1c",
-                border_color="#ff4d4d",
+                fg_color="#000000",
+                border_color="#ff0000",
                 border_width=2,
-                hover_color="#2a2a2a"
+                hover_color="#1c1c1c"
             )
             btn.grid(row=0, column=i, padx=10, pady=5, sticky="nsew")
 
@@ -283,7 +288,7 @@ class SmartCalculatorWithSidebar:
             plt.grid(True)
             plt.show()
         except:
-            self.display_var.set("⚠️ Invalid Expr")
+            self.display_var.set("\u26a0\ufe0f Invalid Expr")
 
     def explain_result(self):
         try:
@@ -317,5 +322,5 @@ class SmartCalculatorWithSidebar:
 
 if __name__ == "__main__":
     root = ctk.CTk()
-    app = SmartCalculatorWithSidebar(root)
+    app = PulseMathCalculator(root)
     root.mainloop()
